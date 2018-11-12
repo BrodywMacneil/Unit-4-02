@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>
+// Created on: November 2018
+// Created by: Brody MacNeil
+// Created for: ICS3U
+// This program rounds numbers
+
+var numberRounded : Double = 0
+var partial : Double = 0
+
+func roundFunc(decPlaces : Int, numbInput : Double) {
+    partial = Double(Int(numbInput * pow(10, Double(decPlaces)) + 0.5))
+    numberRounded = partial / Double(pow(10, Double(decPlaces)))
+    show("\(numberRounded)")
+}
+
+show("How many decimal places do you want your number rounded to?")
+
+var decimalPlaces : Int = askForNumber("Decimal Places")
+
+show("What is your number? (with decimals)")
+
+var number : Double = askForDecimal("Number")
+
+roundFunc(decPlaces: decimalPlaces, numbInput: number)
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 675}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
